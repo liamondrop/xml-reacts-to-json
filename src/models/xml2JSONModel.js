@@ -25,7 +25,6 @@ export default Model.extend({
   },
 
   loadXML(fileName) {
-    console.log(fileName)
     let xmlString = require(`../xml/${fileName}`);
     this.set('rawXML', xmlString);
     this.processXML(xmlString);
@@ -33,7 +32,6 @@ export default Model.extend({
 
   processXML(xmlString) {
     try {
-      console.log(xmlString)
       this.doc = dom.parseFromString(xmlString);
       if (this.output === 'json') {
         this.parser.parseString(xmlString, this._handleParsedString.bind(this));
@@ -86,7 +84,6 @@ export default Model.extend({
   },  
 
   _handleParsedString(err, result) {
-    console.log('_handleParsedString', result)
     if (err) {
       this._setErrorMessage(err.message);
     } else {

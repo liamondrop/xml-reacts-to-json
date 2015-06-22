@@ -8,19 +8,19 @@ export default React.createClass({
 
   handleXMLChange(e) {
     e.preventDefault();
-    var xmlInput = React.findDOMNode(this.refs.xml);
+    const xmlInput = React.findDOMNode(this.refs.xml);
     app.model.processXML(xmlInput.value);
   },
 
   handleOptionChange(e) {
-    var {name, value} = e.target;
-    value = (value === 'true'); // coerce to boolean
+    let {name, value} = e.target;
+    value = (value === 'true'); // coerce value to boolean
     app.model.updateParseOption({name, value});
     app.model.processXML(app.model.rawXML);
   },
 
   handleOutputChange(e) {
-    var output = e.target.value;
+    const output = e.target.value;
     app.model.updateOutputType(output);
     app.model.processXML(app.model.rawXML);
     this.setState({output});
@@ -28,13 +28,13 @@ export default React.createClass({
 
   handleXMLSearch(e) {
     e.preventDefault();
-    var searchInput = React.findDOMNode(this.refs.search);
+    const searchInput = React.findDOMNode(this.refs.search);
     app.model.searchXML(searchInput.value);
   },
 
   render() {
-    var {output, rawXML} = this.props
-    var outputType = `is-${output}`
+    const {output, rawXML} = this.props
+    const outputType = `is-${output}`
 
     return (
       <form>

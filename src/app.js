@@ -1,7 +1,7 @@
 import styles from './styles/main.styl';
 import Router from './router';
-import xml2JSONModel from './models/xml2JSONModel';
 import app from 'ampersand-app';
+import xml2JSONModel from './models/xml2JSONModel';
 
 const INITIAL_XML = 'hello.xml';
 

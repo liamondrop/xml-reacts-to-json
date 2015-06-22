@@ -9,6 +9,7 @@ export default React.createClass({
     this._updateCodeNode();
   },
 
+  // set the innerText of the code node in a React-friendly way
   _updateCodeNode() {
     const codeNode = React.findDOMNode(this.refs.code);
     let {prettyData, error} = this.props;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default React.createClass({
   render() {
@@ -6,4 +6,4 @@ export default React.createClass({
       <div id="shell" className="container">{this.props.children}</div>
       )
   }
-})
+});
