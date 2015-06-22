@@ -1,7 +1,6 @@
 {
   "name": "xml-reacts-to-json",
   "version": "0.0.1",
-  "description": "",
   "main": "src/app.js",
   "scripts": {
     "start": "hjs-dev-server",
