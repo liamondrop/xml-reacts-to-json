@@ -1,8 +1,8 @@
-import Router from 'ampersand-router'
-import React from 'react'
-import Layout from './layout'
-import Index from './pages/index'
-import app from 'ampersand-app'
+import Router from 'ampersand-router';
+import React from 'react';
+import Layout from './layout';
+import Index from './pages/index';
+
 
 export default Router.extend({
   routes: {
@@ -21,4 +21,4 @@ export default Router.extend({
   index() {
     this.renderPage(Index)
   }
-})
+});
