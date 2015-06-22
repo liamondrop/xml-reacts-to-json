@@ -15,5 +15,3 @@ app.extend({
 });
 
 app.init();
-
-window.app = app
