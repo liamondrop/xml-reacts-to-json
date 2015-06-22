@@ -1,0 +1,16 @@
+<Management>
+    <PolicyState>ACTIVEPOLICY</PolicyState>
+    <ProgramAdministrator>nat</ProgramAdministrator>
+    <Carrier>Fictitious Federal Carrier of Narnians Company</Carrier>
+    <CarrierId>FFCNC</CarrierId>
+    <SystemOfRecord>fakeServer</SystemOfRecord>
+    <AgencyLocationCode>e99999g</AgencyLocationCode>
+    <Version>10</Version>
+    <AgencyId>fakeAgency</AgencyId>
+    <AgencyLocationId>e99999g</AgencyLocationId>
+    <DataItem name="PolicyProcessingVendorId" value="fakeVendor"/>
+    <Flags>
+        <Flag name="ReviewLock" value="true"/>
+        <Flag name="locked" value="true"/>
+    </Flags>
+</Management>

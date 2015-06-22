@@ -1,0 +1,28 @@
+{
+  "name": "xml-reacts-to-json",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "hjs-dev-server",
+    "prebuild": "rm -rf public && mkdir public",
+    "build": "NODE_ENV=production webpack"
+  },
+  "author": "Liam",
+  "license": "ISC",
+  "dependencies": {
+    "ampersand-app": "^1.0.3",
+    "ampersand-model": "^5.0.3",
+    "ampersand-router": "^3.0.2",
+    "hjs-webpack": "^1.8.0",
+    "js-beautify": "^1.5.5",
+    "json-loader": "^0.5.1",
+    "pretty-data": "^0.40.0",
+    "raw-loader": "^0.5.1",
+    "react": "^0.13.2",
+    "xml2js": "^0.4.8",
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.9",
+    "yeticss": "^6.0.3"
+  }
+}
